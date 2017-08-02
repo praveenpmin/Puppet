@@ -37,5 +37,9 @@
 #
 class PB {
 
-
+	file { 'etc/PB':
+		ensure => present,
+		content => "Welcome!\n",
 }
+}
+
